@@ -66,5 +66,5 @@ jobs:
       - name: Deploy to local cluster (simulation)
         run: |
           echo "Deployment manifest updated with new image:"
-          cat k8s-manifests/deployment.yaml | grep image:
+          cat k8s/deployment.yaml | grep image:
           echo "In a real scenario, this would deploy to your cluster"
